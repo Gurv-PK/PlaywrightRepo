@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# Test results and reports
+allure-results/
+screenshot/
+test-report.html
+test-results/
+playwright-report/
+blob-report/
+
+# Environment variables
+.env
+
+# System files
+.DS_Store

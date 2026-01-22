@@ -1,0 +1,23 @@
+{
+  "name": "Jest",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cucumber": "^6.0.7",
+    "jest-circus-allure-environment": "^1.1.1",
+    "jest-html-reporter": "^4.3.0",
+    "playwright": "^1.57.0"
+  },
+  "devDependencies": {
+    "jest": "^27.5.1",
+    "jest-circus": "^27.5.1"
+  }
+}
