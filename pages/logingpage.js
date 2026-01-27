@@ -1,14 +1,20 @@
 class LoginPage{
-    async username() {
-        return await page.$('#user-name')
+    constructor(page){
+        this.page = page;
+    }
+    
+    async enter_username(username){
+        await this.page.getByPlaceholder('Username').fill(username);
     }
 
-    async password_fill(test) {
-        return await page.fill('#password',test)
+    async enter_password(password){
+        await this.page.getByPlaceholder('Password').fill(password);
     }
 
-    async login_button_click(){
-        return await page.click('.submit-button.btn_action')
+    async clickLoginButton(){
+        const loginButton = this.page.getByRole('button', { name: 'Login' });
+        await loginButton.waitFor({state: 'visible'});
+        await loginButton.click();
     }
 }
 module.exports = LoginPage
